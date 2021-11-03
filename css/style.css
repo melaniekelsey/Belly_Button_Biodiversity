@@ -1,11 +1,14 @@
 body {
+  background-image: url("../../images/backgroundwallpaper.jpg");
 
-    color: #f7f7f7;
+    color: #474444;
   }
 
   .jumbotron {
-    background-image: url("../images/bacteria.jpg");
+    background-image: url("../../images/bacteria.jpg");
     background-size: 100% 100%;
     text-align: center;
+    font-family: "Palatino";
+    color: yellow;
   }
   

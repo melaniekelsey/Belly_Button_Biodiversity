@@ -147,7 +147,7 @@ console.log(wFreq);
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-        width: 600, height: 600, margin: { t: 0, b: 0 }
+        width: 100, height: 100, margin: { t: 0, b: 0 }
      
     };
 
