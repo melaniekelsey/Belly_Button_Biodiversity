@@ -3,7 +3,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("samples.json").then((data) => {
+  d3.json("js/samples.json").then((data) => {
     var sampleNames = data.names;
 
     sampleNames.forEach((sample) => {
@@ -32,7 +32,7 @@ function optionChanged(newSample) {
 
 // Demographics Panel 
 function buildMetadata(sample) {
-  d3.json("samples.json").then((data) => {
+  d3.json("js/samples.json").then((data) => {
     var metadata = data.metadata;
     // Filter the data for the object with the desired sample number
     var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
@@ -56,7 +56,7 @@ function buildMetadata(sample) {
 // 1. Create the buildCharts function.
 function buildCharts(sample) {
   // 2. Use d3.json to load and retrieve the samples.json file 
-  d3.json("samples.json").then((data) => {
+  d3.json("js/samples.json").then((data) => {
     // 3. Create a variable that holds the samples array. 
     var chartMetadata = data.samples;
     console.log(chartMetadata);
@@ -147,7 +147,7 @@ console.log(wFreq);
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-        width: 100, height: 100, margin: { t: 0, b: 0 }
+        width: 600, height: 600, margin: { t: 0, b: 0 }
      
     };
 
